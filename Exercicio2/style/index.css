@@ -1,0 +1,36 @@
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Quebrará a linha quando chegar no limite do width*/
+}
+
+.container  li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    p {
+        display: none;
+    }
+}
+
+.container  li:hover {
+    width: 350px;
+    transform: scale(1.05); /* Aumenta o card em 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o card */
+    display: flex;
+    flex-direction: row-reverse;
+    p {
+        display: block;
+    }
+    figure {
+        width: 5px;
+    }
+}
